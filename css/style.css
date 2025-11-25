@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  list-style-type: none;
+}
 /* VARIABLES */
 :root {
   /*fonts*/
@@ -52,7 +55,7 @@ a {
   color: var(--main-clr);
 }
 /* MAIN */
-.main {
+.menu__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -68,16 +71,12 @@ a {
 .item__link {
   max-width: 392px;
 }
-.item__link:hover {
+.menu__item:hover {
   transform: scale(1.05);
   transition: 0.5s;
   z-index: 60;
 }
 .item__img {
-  background-image: url(../img/icon-bcg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
   position: relative;
 
   width: 360px;
@@ -170,8 +169,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 4px;
-}
-.address__h5 {
+
   color: var(--scnd-clr);
   font-size: 16px;
   line-height: 16px;
